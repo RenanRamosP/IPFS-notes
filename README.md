@@ -1,5 +1,10 @@
 # Tasks
 
+To run the project as a production build, run `chmod +x setup.sh`, `./setup.sh` and `docker compose up` one after the other.
+To run o "dev" mode must remove the frontend container from the docker-compose.yml file run `chmod +x setup.sh`, `./setup.sh` and change `IPFS_HOST=ipfs` to `IPFS_HOST=` on the created .env file and run `npm run dev` and `docker compose up` in different terminals.
+
+The application was developed using nextJs most of the components used are from ShadCn and TailwindCSS. The application is a simple note taking application that allows the user to create, view and delete(unpin) notes. The notes/files are stored in IPFS.
+
 ### Main
 
 [x] Write text notes in the UI and save them to IPFS
