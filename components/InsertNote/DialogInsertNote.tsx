@@ -13,10 +13,10 @@ export default function DialogInsertNote({ dispatch }: DialogInsertNoteProps) {
   return (
     <Dialog>
       <DialogTrigger>
-        <Button>
+        <div className="flex bg-primary text-primary-foreground rounded-full p-3 ">
           Insert Notes/Files
           <BookPlus />
-        </Button>
+        </div>
       </DialogTrigger>
       <DialogContent>
         <InsertNote dispatch={dispatch} />
