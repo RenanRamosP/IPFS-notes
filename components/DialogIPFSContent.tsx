@@ -2,16 +2,12 @@
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import axios from "axios";
-
 import { ArrowBigDownDash } from "lucide-react";
 import { useState } from "react";
-import { BasicIpfsData } from "../pages/api/ipfs";
 import { getNotes } from "../providers/handleIPFS";
 import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
@@ -55,21 +51,12 @@ export default function DialogIPFSContent(props: DialogIPFSContentProps) {
         />
         <Button
           onClick={async () => {
-            console.log(
-              "🚀 ~ file: DialogIPFSContent.tsx:59 ~ onClick={ ~ typeof contentData.content =:",
-              typeof contentData.content,
-              contentData.content
-            );
             const contentBlob = new Blob([Buffer.from(contentData.content)]);
             const fileURL = window.URL.createObjectURL(contentBlob);
             let alink = document.createElement("a");
             alink.href = fileURL;
             alink.download = contentData.name ?? "ipfs-file.txt";
             alink.click();
-            console.log(
-              "🚀 ~ file: DialogIPFSContent.tsx:33 ~ onClick={ ~ resp:",
-              contentData
-            );
           }}
         >
           <ArrowBigDownDash className="cursor-pointer" />

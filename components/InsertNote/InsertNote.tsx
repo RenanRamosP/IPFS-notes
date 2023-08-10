@@ -111,7 +111,6 @@ export default function InsertNote({ dispatch }: InsertNoteProps) {
                   <FormFieldWrapper form={form} fieldName="path" label="Path">
                     <Input placeholder="Enter a path" />
                   </FormFieldWrapper>
-
                   <FormField
                     control={form.control}
                     name={"fileData"}
@@ -128,7 +127,6 @@ export default function InsertNote({ dispatch }: InsertNoteProps) {
                       </FormItem>
                     )}
                   />
-
                   <Button type="submit">Send file to IPFS</Button>
                 </div>
               </TabsContent>

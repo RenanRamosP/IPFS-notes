@@ -31,7 +31,6 @@ export default function IPFSTable({ dispatch, state }: IPFSTableProps) {
       setLoading(true);
       unPinIPFSNote(cid)
         .then((res) => {
-          console.log("🚀 ~ file: IPFSTable.tsx:33 ~ .then ~ res:", res);
           dispatch({
             type: "update",
             payload: state.filter((note) => note.cid !== cid),
@@ -127,8 +126,7 @@ export default function IPFSTable({ dispatch, state }: IPFSTableProps) {
                 <PinOffIcon
                   className="cursor-pointer"
                   onClick={async () => {
-                    const resp = await unPinNote(info.cid);
-                    console.log("unPin", resp);
+                    await unPinNote(info.cid);
                   }}
                 />
               </TableCell>
