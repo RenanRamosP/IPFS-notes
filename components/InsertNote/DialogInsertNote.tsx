@@ -1,8 +1,7 @@
 "use client";
-import { BookPlus } from "lucide-react";
 import InsertNote from "@/components/InsertNote/InsertNote";
-import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { BookPlus } from "lucide-react";
 import { Dispatch } from "react";
 import { tableDataActions } from "../../state/tableDataReducer";
 
