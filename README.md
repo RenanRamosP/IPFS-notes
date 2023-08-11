@@ -14,14 +14,14 @@ The application was developed using nextJs most of the components used are from 
 
 - [x] Figure out how to allow the notes to survive between server restarts
 - [x] Make the UI modern and smooth (we have pre-included - [TailwindCSS](https://tailwindcss.com/docs/utility-first))
-- [] Allow users to sign notes using encryption
+- [ ] Allow users to sign notes using encryption
 - [x] Allow support for file uploads
-- [] Enable IPLD support (nested directory file management)
-- [] Enable search support
-- [] Support for 10k+ notes
-- [] Enable multiplayer (multiple collaborators in real-time can work on notes)
-- [] Enable WebGL/3D support for exploring notes (or just to look cool)
-- [] Write highly useful tests
+- [ ] Enable IPLD support (nested directory file management)
+- [ ] Enable search support
+- [ ] Support for 10k+ notes
+- [ ] Enable multiplayer (multiple collaborators in real-time can work on notes)
+- [ ] Enable WebGL/3D support for exploring notes (or just to look cool)
+- [ ] Write highly useful tests
 
 # IPFS Notes: DeSci Labs Independent Project
 
